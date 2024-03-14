@@ -1,0 +1,7 @@
+# ninja log v5
+12	224	7321109781956879	CMakeFiles/TAD_Vector_Dinamic.dir/Proiect_C++/IteratorVectorDinamic.cpp.obj	b5f3d4227ccc0569
+49	346	7321109783194180	CMakeFiles/TAD_Vector_Dinamic.dir/Proiect_C++/VectorDinamic.cpp.obj	89a0a5b1144dcb4d
+21	1000	7321109789572222	CMakeFiles/TAD_Vector_Dinamic.dir/Teste/TestScurt.cpp.obj	fdcade28cfdf5479
+1	1003	7321109789628343	CMakeFiles/TAD_Vector_Dinamic.dir/Proiect_C++/App.cpp.obj	f9aca2419a81509b
+28	1034	7321109790072475	CMakeFiles/TAD_Vector_Dinamic.dir/Teste/TestExtins.cpp.obj	ec57d0ffcc07c355
+1035	1376	7321109793425361	TAD_Vector_Dinamic.exe	a6bbac7c26f70fdb
