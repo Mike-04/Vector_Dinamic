@@ -39,6 +39,7 @@ void testAdauga() {
 	int k = 0;
 	while(iv.valid()){
         TElem e = iv.element();
+        //printf("%d\n", e);
         assert(e == vals[k]);
         k++;
         iv.urmator();
@@ -46,6 +47,7 @@ void testAdauga() {
 	//test parcurgere
 	for(int i = 0; i < v.dim(); i++){
         TElem e = v.element(i);
+        //printf("%d\n", e);
         assert(e == vals[i]);
 	}
 }

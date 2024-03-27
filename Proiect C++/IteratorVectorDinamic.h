@@ -1,18 +1,14 @@
 #pragma once
 #include "VectorDinamic.h"
 
-class IteratorVectorDinamic {
+class IteratorVectorDinamic {
+
 	friend class VectorDinamic;
-private:
-	//constructorul primeste o referinta catre Container
-	//iteratorul va referi primul element din container
-
-	IteratorVectorDinamic(const VectorDinamic&);
-
-	//contine o referinta catre containerul pe care il itereaza
+private:
 	const VectorDinamic& v;
+    int current;
+    IteratorVectorDinamic(const VectorDinamic& v);
 
-	/* aici e reprezentarea specifica a iteratorului */
 public:
 
 		//reseteaza pozitia iteratorului la inceputul containerului
@@ -27,5 +23,6 @@ public:
 
 		//returneaza valoarea elementului din container referit de iterator
 		//arunca exceptie daca iteratorul nu e valid
-		TElem element() const;
+		TElem element();
+
 };

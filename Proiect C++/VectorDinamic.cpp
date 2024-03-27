@@ -39,30 +39,44 @@ int VectorDinamic::dim() const{
 
 
 TElem VectorDinamic::element(int i) const{
-	return elems[i-1];
+	return elems[i];
 }
 
 
 
 void VectorDinamic::adaugaSfarsit(TElem e) {
-	/* de adaugat */
+	if(size==max_size)
+        redim();
+    this->elems[size++] = e;
 }
 
 
 void VectorDinamic::adauga(int i, TElem e) {
-	/* de adaugat */
+	if(size==max_size)
+        redim();
+    for(int j = size; j > i; j--)
+        this->elems[j] = this->elems[j-1];
+    this->elems[i] = e;
+    size++;
 }
 
 
 TElem VectorDinamic::modifica(int i, TElem e) {
 	/* de adaugat */
-	return -1;
+    TElem old = this->elems[i];
+    this->elems[i] = e;
+    return old;
 }
 
 
 TElem VectorDinamic::sterge(int i) {
 	/* de adaugat */
-	return -1;
+    TElem old = this->elems[i];
+    for(int j = i; j < size; j++)
+        this->elems[j] = this->elems[j+1];
+    if (size>0)
+        size--;
+    return old;
 }
 
 IteratorVectorDinamic VectorDinamic::iterator() {
